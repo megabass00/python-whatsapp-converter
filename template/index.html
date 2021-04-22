@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/glightbox.min.css" />
+    <script src="js/glightbox.min.js"></script>
+    <title>Whatsapp Converter · {username}</title>
+</head>
+<body>
+    <div class="screen-container">
+        <div class="chat">
+            <div class="chat-container">
+                <div class="user-bar">
+                    <div class="name">
+                        <span>{username}</span>
+                        <span class="status">online</span>
+                    </div>
+                    <div class="actions more">
+                        <img src="img/more.svg" />
+                    </div>
+                    <div class="actions attachment">
+                        <img src="img/attach.svg" />
+                    </div>
+                    <div class="actions">
+                        <img src="img/phone.svg" />
+                    </div>
+                </div>
+                <div class="conversation">
+                    <div class="conversation-container">
+                        {conversation}
+                    </div>
+                    <div class="textfield-offset"></div>
+                    <form class="conversation-compose">
+                        <div class="emoji">
+                            <img src="img/emoji.svg" />
+                        </div>
+                        <input class="input-msg" name="input" placeholder="Type a message" autocomplete="off" autofocus />
+                        <div class="photo">
+                            <img src="img/camera.svg" />
+                        </div>
+                        <button class="send">
+                            <div class="circle">
+                                <img src="img/send.svg" />
+                            </div>
+                        </button>
+                    </form>
+                    <script type="text/javascript">
+                        const lightbox = GLightbox({ 
+                            touchNavigation: false,
+                            loop: true,
+                            autoplayVideos: true
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
